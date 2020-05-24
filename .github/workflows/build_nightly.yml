@@ -17,7 +17,7 @@ jobs:
         sudo apt-get -ym install libsdl2-dev
         sudo apt-get -ym install libbz2-dev
         sudo apt-get -ym install autoconf
-        git clone https://github.com/jamespetts/simutrans-extended.git
+        git clone https://github.com/jamespetts/simutrans-extended.git simutrans-extended
     - name: setup
       run: |
         cd simutrans-extended/trunk
