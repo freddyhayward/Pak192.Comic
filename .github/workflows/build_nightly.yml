@@ -20,13 +20,13 @@ jobs:
         git clone https://github.com/jamespetts/simutrans-extended.git
     - name: setup
       run: |
-        cd simutrans/trunk
+        cd simutrans-extended/trunk
         autoconf
         ./configure
         cat config.default >>/dev/stderr
     - name: make makeobj
       run: |
-          cd simutrans/trunk/makeobj
+          cd simutrans-extended/trunk/makeobj
           make
           mv makeobj ../../..
           cd ../../..
